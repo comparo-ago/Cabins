@@ -21,7 +21,7 @@ const decrementCounter = () => {
 return (
     <div>
     <div id="counterContainer">
-        <a 
+        <a href=" "
         class="unselectable"
         id="counterContainerLeft"
         onClick={decrementCounter}
@@ -29,7 +29,7 @@ return (
         -
         </a>
         <h6 id="counterContainerMiddle">{counter}</h6>
-        <a 
+        <a href=" "
         class="unselectable"
         id="counterContainerRight"
         onClick={counter < stock ? incrementCounter : null}
