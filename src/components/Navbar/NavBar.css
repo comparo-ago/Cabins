@@ -1,0 +1,5 @@
+.MuiButton-contained {
+    display: flex;
+    justify-items: right;
+    background-color: lightgray;
+}
