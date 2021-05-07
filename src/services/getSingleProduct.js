@@ -2,7 +2,7 @@ function getSingleProduct(id) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       fetch(
-        "https://raw.githubusercontent.com/Akirajit/GuitarNation-Tsuchida/hotfix/public/data.json"
+        "https://github.com/comparo-ago/Cabins/blob/main/public/data.json"
       )
         .then((response) => response.json())
         .then((data) => data.find((item) => item.id == id))
