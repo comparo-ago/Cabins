@@ -1,49 +1,43 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import CartWidget from '../CartWidget/CartWidget';
-import '../Navbar/NavBar.css'
+import React from "react";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import CartWidgeet from "../CartWidget/CartWidget";
+import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
-const useStyles = makeStyles((theme) => ({
-  OffSet: theme.mixins.toolbar 
-  
-}));
-
-export default function NavBar() {
-  const classes = useStyles();
-
+function Menu() {
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-          <Typography variant="h2" className={classes.title}>
-            Kusikuy
-          </Typography>
-          <CartWidget />
-          </IconButton>
-          <Button variant="contained" color="primary"><Typography variant="h5" className={classes.title}>
-            News
-          </Typography></Button>
-          <Button variant="contained" color="primary"><Typography variant="h5" className={classes.title}>
-            Photos
-            </Typography></Button>
-            <Button variant="contained" color="primary"><Typography variant="h5" className={classes.title}>
-            FAQ's
-          </Typography></Button>
-          <Button variant="contained" color="primary"><Typography variant="h5" className={classes.title}>
-            How can I get there?
-          </Typography></Button>
-          <Button variant="contained" align="right">
-            Login 
-          </Button>
-        </Toolbar>
-      </AppBar>
-      <div className={classes.OffSet}></div>
-    </div>
+    <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
+      <div className="container">
+        <NavLink className="navlink-brand" to="/">
+          Guitar Nation
+        </NavLink>
+        {/* <Navbar.Brand href="/" class="navbar-home">
+          Guitar Nation
+        </Navbar.Brand> */}
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <NavLink className="navlink-item" to="/category/guitars">
+              Guitars
+            </NavLink>
+            <NavLink className="navlink-item" to="/category/amps">
+              Amps
+            </NavLink>
+            <NavLink className="navlink-item" to="/category/effects">
+              Effects
+            </NavLink>
+            {/* <Nav.Link href="/category/amps">Amps</Nav.Link>
+            <Nav.Link href="/category/effects">EffectS</Nav.Link> */}
+          </Nav>
+          <Nav>
+            <a href="#">
+              <CartWidgeet />
+            </a>
+          </Nav>
+        </Navbar.Collapse>
+      </div>
+    </Navbar>
   );
 }
+
+export default Menu;

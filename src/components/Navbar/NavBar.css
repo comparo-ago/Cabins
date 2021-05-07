@@ -1,5 +1,24 @@
-.MuiButton-contained {
-    display: flex;
-    justify-items: right;
-    background-color: lightgray;
-}
+.navbar-home:hover {
+    color: white;
+    border: 1px solid re;
+  }
+  
+  .navlink-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 40px;
+  }
+  
+  .navlink-brand:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  
+  .navlink-item {
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 20px;
+  }
+  
+  .navlink-item:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
