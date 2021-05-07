@@ -7,7 +7,7 @@ const [items, setItems] = useState([]);
 
 useEffect(() => {
     setTimeout(() => {
-    fetch('data.json', {
+    fetch('https://github.com/comparo-ago/Cabins/blob/main/public/data.json', {
         headers: {
         "Content-Type": "application/json",
         Accept: "application/json",

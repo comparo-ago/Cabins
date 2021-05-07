@@ -38,7 +38,7 @@ export default function NavBar() {
           <Button variant="contained" color="primary"><Typography variant="h5" className={classes.title}>
             How can I get there?
           </Typography></Button>
-          <Button variant="contained" >
+          <Button variant="contained" align="right">
             Login 
           </Button>
         </Toolbar>
