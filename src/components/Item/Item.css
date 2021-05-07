@@ -1,0 +1,32 @@
+/* .itemContainer {
+  display: flex;
+  flex-direction: row;
+} */
+
+.item-container {
+    margin-bottom: 50px;
+  }
+  
+  a {
+    color: black;
+    transition: transform 0.7s;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: black;
+    transform: scale(0.9);
+  }
+  
+  .item-container--title {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .item-container--price {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  

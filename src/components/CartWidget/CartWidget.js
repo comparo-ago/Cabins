@@ -1,11 +1,9 @@
-import { React } from "react";
-import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
-import Button from '@material-ui/core/Button'
+import React from "react";
+import { FiShoppingCart } from "react-icons/fi";
+import "./CartWidget.css";
 
-function CartWidget(){
-    return(
-        <Button>
-<ShoppingCartOutlinedIcon style={{ fontSize: 40 }} />
-</Button>
-)}
+function CartWidget() {
+  return <FiShoppingCart id="FiShoppingCart" size="1.5em" color="#dadada" />;
+}
+
 export default CartWidget;

@@ -1,53 +1,53 @@
 import React, { useState } from "react";
-import { Button } from "@material-ui/core";
-import '../ItemCount/ItemCount.css'
+import { Button, Card, Container } from "react-bootstrap";
+import "./ItemCount.css";
 
 function ItemCount({ initial, stock, onAdd }) {
-const [counter, setCounter] = useState(initial);
+  const [counter, setCounter] = useState(initial);
 
-const incrementCounter = () => {
+  const incrementCounter = () => {
     if (counter <= stock) {
-    setCounter(counter + 1);
+      setCounter(counter + 1);
     }
-};
+  };
 
-const decrementCounter = () => {
+  const decrementCounter = () => {
     if (counter > 1) {
-    setCounter(counter - 1);
+      setCounter(counter - 1);
     }
-};
-return (
+  };
+  return (
     <div>
-    <div id="counterContainer">
+      <div id="counterContainer">
         <a
-        class="unselectable"
-        id="counterContainerLeft"
-        onClick={decrementCounter}
+          class="unselectable"
+          id="counterContainerLeft"
+          onClick={decrementCounter}
         >
-        -
+          -
         </a>
         <h6 id="counterContainerMiddle">{counter}</h6>
-        <a 
-        class="unselectable"
-        id="counterContainerRight"
-        onClick={counter < stock ? incrementCounter : null}
+        <a
+          class="unselectable"
+          id="counterContainerRight"
+          onClick={counter < stock ? incrementCounter : null}
         >
-        +
+          +
         </a>
-    </div>
-    <Button
+      </div>
+      <Button
         id="addToCartBtn"
         variant="primary"
         onClick={
-        counter <= stock
+          counter <= stock
             ? () => onAdd(counter)
-            : () => alert("Producto fuera de stock.")
+            : () => alert("Producto out of stock. Please try a lower number.")
         }
-    >
+      >
         Add to cart
-    </Button>
+      </Button>
     </div>
-);
+  );
 }
 
 export default ItemCount;
