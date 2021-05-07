@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Button } from "@material-ui/core";
 import '../ItemCount/ItemCount.css'
 
-
-
 function ItemCount({ initial, stock, onAdd }) {
 const [counter, setCounter] = useState(initial);
 
@@ -21,7 +19,7 @@ const decrementCounter = () => {
 return (
     <div>
     <div id="counterContainer">
-        <a href=" "
+        <a
         class="unselectable"
         id="counterContainerLeft"
         onClick={decrementCounter}
@@ -29,7 +27,7 @@ return (
         -
         </a>
         <h6 id="counterContainerMiddle">{counter}</h6>
-        <a href=" "
+        <a 
         class="unselectable"
         id="counterContainerRight"
         onClick={counter < stock ? incrementCounter : null}
@@ -43,7 +41,7 @@ return (
         onClick={
         counter <= stock
             ? () => onAdd(counter)
-            : () => alert("Producto out of stock. Please try a lower number.")
+            : () => alert("Producto fuera de stock.")
         }
     >
         Add to cart
