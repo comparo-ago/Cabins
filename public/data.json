@@ -1,42 +1,48 @@
 [
+
     {
     "id": 1,
+    "categoryId":"cabañas",
     "title": "Cabañas madera",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    "price": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+    "price": "60000",
     "pictureUrl":"https://github.com/comparo-ago/Cabins/blob/main/public/images/caba%C3%B1a1.jpg",
     "stock":10
     },
     {
     "id": 2,
+    "categoryId":"cabañas",
     "title": "Cabañas Pre ensambladas",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    "price": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+    "price": "75000",
     "pictureUrl":"https://github.com/comparo-ago/Cabins/blob/main/public/images/forest-covered-trees-dry-leaves-sunlight-autumn(1).jpg",
     "stock":7
 
     },
     {
     "id": 3,
+    "categoryId":"cabañas",
     "title": "Cabañas de Hormigon",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    "price": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+    "price": "80000",
     "pictureUrl":"https://github.com/comparo-ago/Cabins/blob/main/public/images/pexels-eneida-nieves-803975(1).jpg",
     "stock":3
     },
     {
     "id": 4,
+    "categoryId":"cabañas",
     "title": "Cabañas Holandesas",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    "price": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+    "price": "85000",
     "pictureUrl":"https://github.com/comparo-ago/Cabins/blob/main/public/images/pexels-kaique-rocha-775201(1).jpg",
     "stock":1
     },
     {
     "id": 5,
+    "categoryId":"cabañas",
     "title": "Cabañas Caribeñas",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    "price": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+    "price": "90000",
     "pictureUrl":"https://github.com/comparo-ago/Cabins/blob/main/public/images/pexels-kaique-rocha-775201(1).jpg",
     "stock":5
     }

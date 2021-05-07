@@ -1,7 +1,7 @@
 import React from "react";
-import { Nav, Navbar, NavDropdown } from "react-bootstrap";
-import CartWidgeet from "../CartWidget/CartWidget";
-import "./Navbar.css";
+import { Nav, Navbar } from "react-bootstrap";
+import CartWidget from "../CartWidget/CartWidget";
+import "../Navbar/NavBar.css";
 import { NavLink } from "react-router-dom";
 
 function Menu() {
@@ -31,7 +31,7 @@ function Menu() {
           </Nav>
           <Nav>
             <a href="#">
-              <CartWidgeet />
+              <CartWidget />
             </a>
           </Nav>
         </Navbar.Collapse>
