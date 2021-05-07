@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar/NavBar";
-
+import HomePageContainer from "./container/homePage/HomePageContainer";
 import ItemsListContainer from "./container/ItemDetailPage/ItemDetailContainer";
 import ItemDetailContainer from "./container/ItemDetailPage/ItemDetailContainer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
