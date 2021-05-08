@@ -11,16 +11,11 @@ export default function ItemListContainer({ greeting }) {
   const [loading, setLoading] = useState(false);
   const { categoryId } = useParams();
 
-  useEffect(() => {
-    // console.log(categoryId);
-    setLoading(true);
-    getProducts().then((data) => {
-      !categoryId
-        ? setItems(data)
-        : setItems(data.filter((item) => item.categoryId == categoryId));
-      setLoading(false);
-    });
-  }, []);
+  // useEffect(() => {
+  //   // console.log(categoryId);
+  //   setLoading(true);
+  //   getProducts().then((data) => setItems(data));
+  // }, []);
 
   useEffect(() => {
     // console.log(categoryId);
@@ -28,7 +23,7 @@ export default function ItemListContainer({ greeting }) {
     getProducts().then((data) => {
       !categoryId
         ? setItems(data)
-        : setItems(data.filter((item) => item.categoryId == categoryId));
+        : setItems(data.filter((item) => item.categoryId === categoryId));
       setLoading(false);
     });
   }, [categoryId]);

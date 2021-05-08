@@ -4,6 +4,7 @@ import Item from "../Item/Item";
 import "./ItemList.css";
 
 function ItemList({ ItemListProp }) {
+  console.log(ItemListProp);
   return (
     <Container className="ItemList-container">
       <Row>
