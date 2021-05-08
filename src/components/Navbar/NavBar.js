@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import CartWidget from "../CartWidget/CartWidget";
-import "../Navbar/NavBar.css";
+import "./NavBar.css";
 import { NavLink } from "react-router-dom";
 
 function Menu() {
@@ -11,7 +11,7 @@ function Menu() {
         <NavLink className="navlink-brand" to="/">
           Kusikuy
         </NavLink>
-        {/* <Navbar.Brand href="/" class="navbar-home">
+        {/* <Navbar.Brand href="/" className="navbar-home">
           Guitar Nation
         </Navbar.Brand> */}
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

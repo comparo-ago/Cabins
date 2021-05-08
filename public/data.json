@@ -45,5 +45,14 @@
     "price": "90000",
     "pictureUrl":"https://github.com/comparo-ago/Cabins/blob/main/public/images/pexels-kaique-rocha-775201(1).jpg",
     "stock":5
-    }
+    },
+    {
+        "id": 6,
+        "categoryId":"cabañas",
+        "title": "Cabañas Caribeñas",
+        "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+        "price": "90000",
+        "pictureUrl":"https://github.com/comparo-ago/Cabins/blob/main/public/images/pexels-kaique-rocha-775201(1).jpg",
+        "stock":5
+        }
 ]

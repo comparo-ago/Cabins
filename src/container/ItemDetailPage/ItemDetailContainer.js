@@ -18,7 +18,7 @@ function ItemDetailContainer() {
       setLoading(false);
       console.log(loading);
     });
-  }, []);
+  }, [itemId]);
 
   return (
     <div>

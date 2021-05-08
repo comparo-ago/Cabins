@@ -20,7 +20,7 @@ function ItemCount({ initial, stock, onAdd }) {
     <div>
       <div id="counterContainer">
         <a
-          class="unselectable"
+          className="unselectable"
           id="counterContainerLeft"
           onClick={decrementCounter}
         >
@@ -28,7 +28,7 @@ function ItemCount({ initial, stock, onAdd }) {
         </a>
         <h6 id="counterContainerMiddle">{counter}</h6>
         <a
-          class="unselectable"
+          className="unselectable"
           id="counterContainerRight"
           onClick={counter < stock ? incrementCounter : null}
         >
