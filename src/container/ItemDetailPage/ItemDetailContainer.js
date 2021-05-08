@@ -2,25 +2,23 @@ import React, { useEffect, useState } from "react";
 import "./ItemDetailContainer.css";
 import { useParams } from "react-router-dom";
 import ItemDetail from "../../components/ItemDetail/ItemDetail";
-/*import { getSingleProduct } from "../../services/getSingleProduct";*/
+import { getSingleProduct } from "../../services/getSingleProduct";
 import { Spinner, Container } from "react-bootstrap";
 
-
-
 function ItemDetailContainer() {
-  const { getSingleProduct} = require('../../services/getSingleProduct');
-  const { itemId,setItemId } = useParams();
+  const { itemId } = useParams();
   const [item, setItem] = useState({});
-  const [loading, setLoading] = useState(true);
-  console.log(typeof itemId);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
+    console.log(loading);
     getSingleProduct(itemId).then((item) => {
       setItem(item);
       setLoading(false);
       console.log(loading);
     });
-  }, [itemId]);
+  }, []);
 
   return (
     <div>

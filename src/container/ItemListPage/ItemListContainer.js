@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import "./ItemsListContainer.css";
-import ItemsList from "../../components/ItemsList/ItemsList";
+import "./ItemListContainer.css";
+import ItemList from "../../components/ItemList/ItemList";
 import { Container, Spinner } from "react-bootstrap";
 
 const { getProducts } = require("../../services/getProducts");
 
-export default function ItemsListContainer({ greeting }) {
+export default function ItemListContainer({ greeting }) {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const { categoryId } = useParams();
@@ -45,7 +45,7 @@ export default function ItemsListContainer({ greeting }) {
           </Spinner>
         </Container>
       ) : (
-        <ItemsList itemsListProp={items} />
+        <ItemList ItemListProp={items} />
       )}
     </div>
   );

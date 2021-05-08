@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import ItemCount from "../ItemCount/ItemCount";
-import "./item.css";
+import "./Item.css";
 
 function Item({ item }) {
   const onAdd = (counter) => {

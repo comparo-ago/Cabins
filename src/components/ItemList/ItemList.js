@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Item from "../Item/Item";
-import "./ItemsList.css";
+import "./ItemList.css";
 
-function ItemsList({ itemsListProp }) {
+function ItemList({ ItemListProp }) {
   return (
-    <Container className="itemslist-container">
+    <Container className="ItemList-container">
       <Row>
-        {itemsListProp.map((item) => (
+        {ItemListProp.map((item) => (
           <Col>
             <Item key={item.id} item={item} />
           </Col>
@@ -17,4 +17,4 @@ function ItemsList({ itemsListProp }) {
   );
 }
 
-export default ItemsList;
+export default ItemList;
