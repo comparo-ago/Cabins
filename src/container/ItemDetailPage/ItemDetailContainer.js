@@ -8,17 +8,15 @@ import { Spinner, Container } from "react-bootstrap";
 function ItemDetailContainer() {
   const { itemId } = useParams();
   const [item, setItem] = useState({});
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
-    console.log(loading);
     getSingleProduct(itemId).then((item) => {
       setItem(item);
       setLoading(false);
       console.log(loading);
     });
-  }, []);
+  }, [itemId, loading]);
 
   return (
     <div>
