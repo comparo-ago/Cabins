@@ -15,7 +15,7 @@ function HomePageContainer() {
             className="home-container--button"
             size="lg"
           >
-            Start Buying Now
+            Compre Ahora 
           </Button>
         </Row>
         <Carousel id="carousel">
@@ -26,10 +26,9 @@ function HomePageContainer() {
               alt="Background image 1"
             />
             <Carousel.Caption>
-              <h3>Welcome to GuitarNation</h3>
+              <h3>Bienvenido a Kusikuy </h3>
               <p>
-                Here you can find electric and acoustic guitars, basses, amps
-                and effects.
+                Aquí puede encontrar el modelo de cabaña que mas le guste
               </p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -40,8 +39,8 @@ function HomePageContainer() {
               alt="Background image 2"
             />
             <Carousel.Caption>
-              <h3>Wide variety of brands and models.</h3>
-              <p>Fender, Gibson, Ibanez, Yamaha, Cort, and more.</p>
+              <h3>Gran variedad de productos de primera marca </h3>
+              <p>cedro, pino,  , etc.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={2000}>
@@ -51,11 +50,7 @@ function HomePageContainer() {
               alt="Background image 3"
             />
             <Carousel.Caption>
-              <h3>Pedal Effects</h3>
-              <p>
-                Check our huge list of effects: reverb, chorus, distorsion,
-                phaser, delay and more.
-              </p>
+              <h3>griferia de alta calidad</h3>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
