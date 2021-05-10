@@ -34,7 +34,7 @@
     "title": "Cabañas de Hormigon",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     "price": 80000,
-    "pictureUrl":"/assets/images/pexels-eneida-nieves-803975(1).jpg",
+    "pictureUrl":"/images/pexels-eneida-nieves-803975(1).jpg",
     "stock":3
     },
     {
@@ -43,7 +43,7 @@
     "title": "Cabañas Holandesas",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     "price": 85000,
-    "pictureUrl":"/assets/images/pexels-kaique-rocha-775201(1).jpg",
+    "pictureUrl":"/images/pexels-kaique-rocha-775201(1).jpg",
     "stock":1
     },    
     {
@@ -52,7 +52,7 @@
     "title": "Cabañas Holandesas",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     "price": 85000,
-    "pictureUrl":"/assets/images/pexels-kaique-rocha-775201(1).jpg",
+    "pictureUrl":"/images/pexels-kaique-rocha-775201(1).jpg",
     "stock":1
     },
     {
@@ -61,7 +61,7 @@
     "title": "Cabañas Caribeñas",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     "price": 90000,
-    "pictureUrl":"/assets/images/pexels-kaique-rocha-775201(1).jpg",
+    "pictureUrl":"/images/pexels-kaique-rocha-775201(1).jpg",
     "stock":5
     },   
     {
@@ -70,7 +70,7 @@
     "title": "Cabañas Caribeñas",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     "price": 90000,
-    "pictureUrl":"/assets/images/pexels-kaique-rocha-775201(1).jpg",
+    "pictureUrl":"/images/pexels-kaique-rocha-775201(1).jpg",
     "stock":5
     }
 ]
