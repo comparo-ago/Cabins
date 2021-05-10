@@ -1,12 +1,23 @@
-import React from "react";
-import { Jumbotron, Container, Row, Col, Image, Badge } from "react-bootstrap";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { 
+  Jumbotron, 
+  Container, 
+  Row, 
+  Col, 
+  Image, 
+  Badge,
+  Button,
+} from "react-bootstrap";
 import "./ItemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
 
 export default function ItemDetail({ item }) {
-  const onAdd = (counter) => {
-    alert(`${counter} items have been added to the cart.`);
-    };
+  const [quantity, setQuantity] = useState(0);
+  const onAdd = (quantityToAdd) => {
+    alert(`${quantityToAdd} items have been added to the cart.`);
+    setQuantity(quantityToAdd);
+  };
 
   return (
     <div>
@@ -28,7 +39,15 @@ export default function ItemDetail({ item }) {
                 Quantity: {item.stock}
                 <h3 className="item-detail--price">$USD {item.price}</h3>
                 <p className="item-detail--description">{item.description}</p>
-                <ItemCount initial={1} stock={item.stock} onAdd={onAdd} />
+                {quantity > 0 ? (
+                  <Button variant="primary">
+                    <NavLink className="item-detail-buy-btn" to={"/cart"}>
+                      Buy Now
+                    </NavLink>
+                  </Button>
+                ) : (
+                  <ItemCount initial={1} stock={item.stock} onAdd={onAdd} />
+                )}
               </Col>
             </Row>
           </Jumbotron>

@@ -7,7 +7,7 @@ import "./Item.css";
 
 function Item({ item }) {
   const onAdd = (counter) => {
-    alert(`${counter} items have been added to the cart.`);
+    alert(`${counter} items fueron agregados al carro.`);
   };
 
   return (

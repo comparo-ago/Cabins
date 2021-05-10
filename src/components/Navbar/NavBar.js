@@ -11,9 +11,6 @@ function Menu() {
         <NavLink className="navlink-brand" to="/">
           Kusikuy
         </NavLink>
-        {/* <Navbar.Brand href="/" className="navbar-home">
-          Guitar Nation
-        </Navbar.Brand> */}
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
