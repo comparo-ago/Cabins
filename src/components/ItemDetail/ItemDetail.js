@@ -6,7 +6,7 @@ import ItemCount from "../ItemCount/ItemCount";
 export default function ItemDetail({ item }) {
   const onAdd = (counter) => {
     alert(`${counter} items have been added to the cart.`);
-  };
+    };
 
   return (
     <div>
@@ -18,7 +18,6 @@ export default function ItemDetail({ item }) {
                 <Image
                   className="item-detail--image"
                   src={item.pictureUrl}
-                  rounded
                 />
               </Col>
               <Col className="item-detail-right">
