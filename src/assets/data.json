@@ -2,7 +2,7 @@
 
     {
     "id": "1",
-    "categoryId":"cabañas", 
+    "categoryId":"cabañas madera", 
     "title": "Cabañas madera",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     "price": 60000,
@@ -11,7 +11,16 @@
     },
     {
     "id": "2",
-    "categoryId":"cabañas",
+    "categoryId":"cabañas madera", 
+    "title": "Cabañas madera",
+    "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "price": 60000,
+    "pictureUrl":"/assets/images/cabagna1.jpg",
+    "stock":10
+        },
+    {
+    "id": "3",
+    "categoryId":"cabañas pre ensambladas",
     "title": "Cabañas Pre ensambladas",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     "price": 75000,
@@ -20,8 +29,8 @@
 
     },
     {
-    "id": "3",
-    "categoryId":"cabañas",
+    "id": "4",
+    "categoryId":"cabañas de hormigon",
     "title": "Cabañas de Hormigon",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     "price": 80000,
@@ -29,8 +38,17 @@
     "stock":3
     },
     {
-    "id": "4",
-    "categoryId":"cabañas",
+    "id": "5",
+    "categoryId":"cabañas holandesas",
+    "title": "Cabañas Holandesas",
+    "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "price": 85000,
+    "pictureUrl":"/assets/images/pexels-kaique-rocha-775201(1).jpg",
+    "stock":1
+    },    
+    {
+    "id": "6",
+    "categoryId":"cabañas holandesas",
     "title": "Cabañas Holandesas",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     "price": 85000,
@@ -38,8 +56,17 @@
     "stock":1
     },
     {
-    "id": "5",
-    "categoryId":"cabañas",
+    "id": "7",
+    "categoryId":"cabañas caribeñas",
+    "title": "Cabañas Caribeñas",
+    "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "price": 90000,
+    "pictureUrl":"/assets/images/pexels-kaique-rocha-775201(1).jpg",
+    "stock":5
+    },   
+    {
+    "id": "8",
+    "categoryId":"cabañas caribeñas",
     "title": "Cabañas Caribeñas",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     "price": 90000,
