@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./ItemDetailContainer.css";
 import { useParams } from "react-router-dom";
 import ItemDetail from "../../components/ItemDetail/ItemDetail";
-import { getSingleProduct } from "../../services/getSingleProduct";
+import { getSingleProduct } from '../../services/getSingleProduct';
 import { Spinner, Container } from "react-bootstrap";
 
 function ItemDetailContainer() {

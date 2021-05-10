@@ -10,17 +10,6 @@ export default function ItemListContainer({ greeting }) {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const { categoryId } = useParams();
-
-  useEffect(() => {
-    // console.log(categoryId);
-    setLoading(true);
-    getProducts().then((data) => {
-      !categoryId
-        ? setItems(data)
-        : setItems(data.filter((item) => item.categoryId == categoryId));
-      setLoading(false);
-    });
-  }, []);
   
   useEffect(() => {
     // console.log(categoryId);
@@ -41,7 +30,7 @@ export default function ItemListContainer({ greeting }) {
       {loading ? (
         <Container className="d-flex justify-content-center">
           <Spinner animation="border" role="status">
-            <span className="sr-only">Loading...</span>
+            <span className="sr-only"></span>
           </Spinner>
         </Container>
       ) : (
