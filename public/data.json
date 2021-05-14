@@ -6,7 +6,7 @@
     "title": "Cabañas madera",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     "price": 60000,
-    "pictureUrl":"/assets/images/cabagna1.jpg",
+    "pictureUrl":"./images/cabagna1.jpg",
     "stock":10
     },
     {
@@ -15,16 +15,16 @@
     "title": "Cabañas madera",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     "price": 60000,
-    "pictureUrl":"/assets/images/cabagna1.jpg",
+    "pictureUrl":"./images/cabagna1.jpg",
     "stock":10
-        },
+    },
     {
     "id": "3",
     "categoryId":"cabañas pre ensambladas",
     "title": "Cabañas Pre ensambladas",
     "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
     "price": 75000,
-    "pictureUrl":"/assets/images/forest-covered-trees-dry-leaves-sunlight-autumn(1).jpg",
+    "pictureUrl":"./images/forest-covered-trees-dry-leaves-sunlight-autumn(1).jpg",
     "stock":7
 
     },

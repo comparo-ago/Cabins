@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import "./ItemListContainer.css";
 import ItemList from "../../components/ItemList/ItemList";
 import { Container, Spinner } from "react-bootstrap";
+import CategoryButtons from "../../components/CategoryButtons/CategoryButtons";
 
 const { getProducts } = require("../../services/getProducts");
 
@@ -25,7 +26,7 @@ export default function ItemListContainer({ greeting }) {
   return (
     <div>
       <h3 id="greeting-message" className="title">
-        {greeting} {categoryId}
+      <CategoryButtons/> 
       </h3>
       {loading ? (
         <Container className="d-flex justify-content-center">
@@ -37,5 +38,7 @@ export default function ItemListContainer({ greeting }) {
         <ItemList ItemListProp={items} />
       )}
     </div>
+
+   
   );
 }
