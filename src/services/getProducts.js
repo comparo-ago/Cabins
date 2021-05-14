@@ -2,7 +2,7 @@ function getProducts() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       fetch(
-        "https://raw.githubusercontent.com/comparo-ago/Cabins/main/src/assets/data.json"
+        "https://raw.githubusercontent.com/comparo-ago/Cabins/main/public/data.json"
       )
         .then((response) => response.json())
         .then((data) => resolve(data))
