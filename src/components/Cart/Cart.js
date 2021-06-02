@@ -5,7 +5,7 @@ function Cart() {
   return (
     <div>
       <Container>
-        <h1>Cart component still under construction 🚧</h1>
+        <h1>Tu Compra:</h1>
       </Container>
     </div>
   );

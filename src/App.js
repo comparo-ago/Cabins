@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar/NavBar";
-import HomePageContainer from "./container/homePage/HomePageContainer";
 import ItemListContainer from "./container/ItemListPage/ItemListContainer";
 import ItemDetailContainer from "./container/ItemDetailPage/ItemDetailContainer";
 import Cart from "./components/Cart/Cart";
