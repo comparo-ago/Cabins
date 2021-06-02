@@ -21,7 +21,7 @@ function Item({ item }) {
           <Card.Text className="item-container--price">
             USD$ {item.price}
           </Card.Text>
-          {/* <ItemCount initial={1} stock={item.stock} onAdd={onAdd} /> */}
+          { <ItemCount initial={1} stock={item.stock} onAdd={onAdd} />}
         </Card.Body>
       </Link>
     </Card>
