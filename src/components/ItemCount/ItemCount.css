@@ -1,31 +1,12 @@
-#counterContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid gray;
+.visual{
+    border: 1px solid lightgray;
     width: 100%;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: .375rem;
+    padding-bottom: .375rem;
 }
 
-#counterContainerMiddle {
-    padding: 5px 50px;
-}
-#addToCartBtn {
+.btn-success{
     width: 100%;
-}
-#counterContainer a {
-    text-decoration: none !important;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.unselectable {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
 }

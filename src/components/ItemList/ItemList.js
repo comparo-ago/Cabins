@@ -1,21 +1,17 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Item from "../Item/Item";
-import "./ItemList.css";
+import React from 'react'
+import Item from '../Item/Item';
 
-function ItemList({ ItemListProp }) {
-  console.log(ItemListProp);
-  return (
-    <Container className="ItemList-container">
-      <Row>
-        {ItemListProp.map((item) => (
-          <Col>
-            <Item key={item.id} item={item} />
-          </Col>
-        ))}
-      </Row>
-    </Container>
-  );
+export default function List({dataInput}) {
+
+    return (
+        <div className="d-flex flex-md-row justify-content-around flex-wrap">
+        {
+            dataInput.map((data) => { 
+            return (
+                <Item key={data.id} data={data} />
+            )
+            })
+        }
+        </div>
+    )
 }
-
-export default ItemList;

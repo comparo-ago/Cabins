@@ -1,0 +1,25 @@
+.header-detalle{
+    padding: 1rem 0 .5rem 0;
+    text-align: center;
+    background-color: rgb(201, 105, 105);
+    margin: 0;
+    font-family: 'Aguafina Script', cursive;
+    font-size: 3rem;
+    color: darkslategrey;
+    text-shadow: 2px 2px 5px white;
+}
+
+.return-button{
+    margin: 1rem;
+    background-color: rgb(201, 105, 105);
+    border: rgb(201, 105, 105);
+}
+
+.item-body{
+    background-color: #828C51;
+}
+
+.item-wrapper{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

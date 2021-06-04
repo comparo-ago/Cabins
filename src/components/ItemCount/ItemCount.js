@@ -1,53 +1,37 @@
-import React, { useState } from "react";
-import { Button, Card, Container } from "react-bootstrap";
-import "./ItemCount.css";
+import React, {useState} from 'react'
+import './ItemCount.css';
 
-function ItemCount({ initial, stock, onAdd }) {
-  const [counter, setCounter] = useState(initial);
+export default function ItemCount ({finalizar}) {
+    const [number, setNumber] = useState(1);
 
-  const incrementCounter = () => {
-    if (counter <= stock) {
-      setCounter(counter + 1);
+    function onIncrement(){
+        setNumber(number + 1)
     }
-  };
 
-  const decrementCounter = () => {
-    if (counter > 1) {
-      setCounter(counter - 1);
+    function onDecrement(){
+        setNumber(number - 1)
     }
-  };
-  return (
-    <div>
-      <div id="counterContainer">
-        <a
-          className="unselectable"
-          id="counterContainerLeft"
-          onClick={decrementCounter}
-        >
-          -
-        </a>
-        <h6 id="counterContainerMiddle">{counter}</h6>
-        <a
-          className="unselectable"
-          id="counterContainerRight"
-          onClick={counter < stock ? incrementCounter : null}
-        >
-          +
-        </a>
-      </div>
-      <Button
-        id="addToCartBtn"
-        variant="primary"
-        onClick={
-          counter <= stock
-            ? () => onAdd(counter)
-            : () => alert("Producto out of stock. Please try a lower number.")
-        }
-      >
-        Add to cart
-      </Button>
-    </div>
-  );
+
+    function addtoCart() {
+        finalizar(number);
+    }
+
+    return(
+        <div>
+            <div className="card-body d-flex justify-content-between">
+                {
+                    number > 0 ? <button onClick={onDecrement} className="btn btn-danger">-</button> : <button onClick={onDecrement} className="btn btn-danger" disabled>-</button>
+                }
+                <p className="visual align-self-center">{number}</p>
+                {
+                    number < 5 ? <button onClick={onIncrement} className="btn btn-primary">+</button> : <button onClick={onIncrement} className="btn btn-primary" disabled>+</button>
+                }
+            </div>
+            <div className="card-body text-center">
+                {
+                    number > 0 ? <button onClick={addtoCart} className="btn btn-success">Agregar al carrito</button> : <button onClick={addtoCart} className="btn btn-success" disabled>Agregar al carrito</button>
+                }
+            </div>
+        </div>
+    )
 }
-
-export default ItemCount;

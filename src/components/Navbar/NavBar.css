@@ -1,24 +1,20 @@
-.navbar-home:hover {
-    color: white;
-    border: 1px solid re;
-  }
-  
-  .navlink-brand {
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    margin-right: 40px;
-  }
-  
-  .navlink-brand:hover {
-    color: rgba(255, 255, 255, 0.75);
-  }
-  
-  .navlink-item {
-    color: rgba(255, 255, 255, 0.5);
-    margin-right: 20px;
-  }
-  
-  .navlink-item:hover {
-    color: rgba(255, 255, 255, 0.75);
-  }
+nav{
+    background-color: #FFFDD0;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.navbar-brand{
+    padding-left: 1rem;
+}
+
+.navbar-logo{
+    border-radius: 50%;
+}
+
+.nav-item{
+    padding: 0 1rem;
+}
+
+.nav-link{
+    font-size: 1.5rem;
+}

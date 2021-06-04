@@ -1,3 +1,20 @@
-#FiShoppingCart:hover {
-    color: #f5f5f5 !important;
-  }
+.navbar-cart{
+    position: relative;
+    margin-right: 2rem;
+    padding: 0.5rem;
+}
+
+.total-items{
+    padding: 0.1rem 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(8, 88, 111);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px orange;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

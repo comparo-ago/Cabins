@@ -1,7 +1,8 @@
-body {
-    height: 100vh;
-  }
-  body .bg-dark {
-    background-color: #001b2f !important;
-  }
-  
+html, body, #root {
+  height: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}

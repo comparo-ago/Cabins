@@ -1,31 +1,19 @@
-import React from "react";
-import { Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import React from 'react'
+import './Item.css';
+import {useHistory} from 'react-router-dom';
 
-import ItemCount from "../ItemCount/ItemCount";
-import "./Item.css";
-
-function Item({ item }) {
-  const onAdd = (counter) => {
-    alert(`${counter} items fueron agregados al carro.`);
-  };
-
-  return (
-    <Card className="item-container" style={{ width: "18rem" }}>
-      <Link to={`/item/${item.id}`}>
-        <Card.Img variant="top" src={item.pictureUrl} />
-        <Card.Body>
-          <Card.Title className="item-container--title">
-            {item.title}
-          </Card.Title>
-          <Card.Text className="item-container--price">
-            USD$ {item.price}
-          </Card.Text>
-          { <ItemCount initial={1} stock={item.stock} onAdd={onAdd} />}
-        </Card.Body>
-      </Link>
-    </Card>
-  );
+export default function Item({data}) {
+    let history = useHistory();
+    return (
+        <div>
+            <div className="card item-card">
+                <img src={data.image} className="card-img-top" alt={data.category} />
+                <div className="card-body d-flex flex-column justify-content-end">
+                    <h5 className="card-title mb-auto">{data.title}</h5>
+                    <p className="card-text">Precio: $ {data.price}</p>
+                    <button type="button" className="btn btn-success link-text" onClick={() => history.push(`/item/${data.id}`)}>Detalles del producto</button>
+                </div>
+            </div>
+        </div>
+    )
 }
-
-export default Item;
