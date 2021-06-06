@@ -8,7 +8,7 @@ export default function NavBar () {
     return(
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <NavLink to={`/`} className="navbar-brand">
-                <img src={logo} className="navbar-logo" width="120" height="60" alt="Kusikuy" loading="lazy"/>
+                <img src={logo} className="navbar-logo" width="190" height="90" alt="Kusikuy" loading="lazy"/>
             </NavLink>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>

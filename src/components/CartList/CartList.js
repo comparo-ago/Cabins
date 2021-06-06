@@ -41,7 +41,7 @@ export default function CartList() {
                                 </button>
                             </td>
                             <td className="font-weight-bold">Total a abonar</td>
-                            <td className="font-weight-bold">$ <span>{totalPrice}</span></td>
+                            <td className="font-weight-bold">u$d <span>{totalPrice}</span></td>
                         </tr>
                     }
                 </tfoot>

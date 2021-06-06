@@ -10,7 +10,7 @@ export default function HomePageContainer() {
     return(
         <div className="home-body">
             <div className="d-flex flex-row">
-                <img src={holandesa} className="d-block w-25 h-25" alt="Holandesa"/>
+                <img src={holandesa} className="d-block w-10 h-10" alt="Holandesa"/>
                 <img src={caribeña} className="d-block w-25 h-25" alt="caribeña"/>
                 <img src={cemento2} className="d-block w-25 h-25"  alt="cemento2"/>
                 <img src={cemento} className="d-block w-25 h-25"  alt="cemento"/>
