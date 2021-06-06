@@ -1,8 +1,8 @@
 import React from "react";
-import lemonies from '../../assets/images/portyleria-lemonies.jpg';
-import portybox2 from '../../assets/images/portyleria-portybox2.jpg';
-import portybox3 from '../../assets/images/portyleria-portybox3.jpg';
-import torta from '../../assets/images/portyleria-torta.jpg';
+import holandesa from '../../assets/images/cabaniaholandesa.jpg';
+import caribeña from '../../assets/images/cabaniacaribenia.jpg';
+import cemento from '../../assets/images/cabaniacemento.jpg';
+import cemento2 from '../../assets/images/cabaniacemento2.jpg';
 import './HomePageContainer.css';
 import {Link} from 'react-router-dom';
 
@@ -10,16 +10,16 @@ export default function HomePageContainer() {
     return(
         <div className="home-body">
             <div className="d-flex flex-row">
-                <img src={portybox2} className="d-block w-25 h-25" alt="PortyBox"/>
-                <img src={portybox3} className="d-block w-25 h-25" alt="PortyBox"/>
-                <img src={lemonies} className="d-block w-25 h-25"  alt="Lemonies"/>
-                <img src={torta} className="d-block w-25 h-25"  alt="Torta"/>
+                <img src={holandesa} className="d-block w-25 h-25" alt="Holandesa"/>
+                <img src={caribeña} className="d-block w-25 h-25" alt="caribeña"/>
+                <img src={cemento2} className="d-block w-25 h-25"  alt="cemento2"/>
+                <img src={cemento} className="d-block w-25 h-25"  alt="cemento"/>
             </div>
             <div className="card w-50 mx-auto home-card">
                 <div className="card-body">
-                    <h5 className="card-title text-center home-card-title">Hola! soy Romi Portillo</h5>
-                    <p className="card-text home-card-text">Bienvenid@s a Portyleria. Mi emprendimiento personal de pasteleria con amor.</p>
-                    <p className="card-text home-card-text">Te invito a que descubras mis productos o me contactes por pedidos especiales.</p>
+                    <h5 className="card-title text-center home-card-title">Bienvenidos a nuestra Pagina</h5>
+                    <p className="card-text home-card-text">Bienvenid@s a Kusikuy. Un lugar donde podes hacer tu sueño realidad!! </p>
+                    <p className="card-text home-card-text">Te invitamos a que descubras tu proximo hogar! </p>
                 </div>
                 <div className="card-body d-flex flex-row justify-content-around align-items-center">
                     <button type="button" className="btn btn-secondary">

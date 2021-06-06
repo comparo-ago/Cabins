@@ -1,5 +1,5 @@
 nav{
-    background-color: #FFFDD0;
+    background-color: #FEA698;
     box-shadow: 2px 2px 4px #000000;
 }
 
@@ -7,9 +7,9 @@ nav{
     padding-left: 1rem;
 }
 
-.navbar-logo{
+/* .navbar-logo{
     border-radius: 50%;
-}
+} */
 
 .nav-item{
     padding: 0 1rem;

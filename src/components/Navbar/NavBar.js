@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavBar.css';
-import logo from '../../assets/images/Portyleria-Logo.jpg';
+import logo from '../../assets/images/KusikuyLogo.png';
 import CartWidget from '../CartWidget/CartWidget';
 import {NavLink} from 'react-router-dom';
 

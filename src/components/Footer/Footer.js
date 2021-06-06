@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import logo from '../../assets/images/Portyleria-Logo.jpg';
+import logo from '../../assets/images/KusikuyLogo.png';
 import {NavLink} from 'react-router-dom';
 
 export default function Footer () {
