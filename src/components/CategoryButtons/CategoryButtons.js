@@ -9,13 +9,13 @@ export default function CategoryButtons() {
                     <Link to={`/products`} className="link-text">Todas nuestras Cabañas</Link>
                 </button>
                 <button type="button" className="btn btn-secondary">
-                    <Link to={`/products/Cemento`} className="link-text">Cabaña de Cemento</Link>
+                    <Link to={`/products/cemento`} className="link-text">Cabaña de Cemento</Link>
                 </button>
                 <button type="button" className="btn btn-secondary">
                     <Link to={`/products/holandesa`} className="link-text">Cabaña Holandesa</Link>
                 </button>
                 <button type="button" className="btn btn-secondary">
-                    <Link to={`/products/Caribenia`} className="link-text">Cabaña Caribeña</Link>
+                    <Link to={`/products/caribenia`} className="link-text">Cabaña Caribeña</Link>
                 </button>
             </div>
         </div>
