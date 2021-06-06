@@ -1,22 +1,22 @@
 .home-body{
-    background-color: #E0BAD7;
+    background-color: #FEA698;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
 .home-card{
     border-radius: 10px;
-    border: 2px solid rgb(201, 105, 105);
+    border: 2px solid #FEA698;
     margin-top: 2rem;
 }
 
 .home-card-title{
-    font-family: 'Aguafina Script', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
 }
 
 .home-card-text{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .home-link{

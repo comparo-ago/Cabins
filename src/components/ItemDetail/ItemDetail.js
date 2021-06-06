@@ -43,7 +43,7 @@ export default function ItemDetail({data}) {
                 <div className="card-body">
                     <h5 className="card-title">{data[0].title}</h5>
                     <p className="card-text">{data[0].description}</p>
-                    <p className="card-text">Precio: $ {data[0].price}</p>
+                    <p className="card-text">Precio: u$d {data[0].price}</p>
                 </div>
                 <div>
                     <ItemCount finalizar={addButton}/>

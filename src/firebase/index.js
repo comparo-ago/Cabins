@@ -1,14 +1,15 @@
 import firebase from 'firebase';
 
+
 const firebaseConfig = {
-    apiKey: "AIzaSyBCxKVVw7ccb3Nk4iNcxLOqxldR8Ig5C_Q",
-    authDomain: "portyleria-molho.firebaseapp.com",
-    projectId: "portyleria-molho",
-    storageBucket: "portyleria-molho.appspot.com",
-    messagingSenderId: "365334469239",
-    appId: "1:365334469239:web:3d014798906b0c46b64472",
-    measurementId: "G-7LYW8SNHZP"
-};
+    apiKey: "AIzaSyCoWVwaesJ2xZrKKtNX3-SxCaCHOtMJA4I",
+    authDomain: "cabins-a96fa.firebaseapp.com",
+    projectId: "cabins-a96fa",
+    storageBucket: "cabins-a96fa.appspot.com",
+    messagingSenderId: "430999710837",
+    appId: "1:430999710837:web:5a7c9981392cfbc078dc3c",
+    measurementId: "G-D0FM07GQBR"
+} 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 

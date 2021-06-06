@@ -10,7 +10,7 @@ export default function Footer () {
                 <div className="d-flex flex-row justify-content-around align-items-center footer">
                     <div className="p-2">
                         <NavLink to={`/`} className="navbar-brand">
-                            <img src={logo} className="navbar-logo" width="200" height="200" alt="Portyleria" loading="lazy"/>
+                            <img src={logo} className="navbar-logo" width="120" height="60" alt="Kusikuy" loading="lazy"/>
                         </NavLink>
                     </div>
                     <div className="p-2">
@@ -24,7 +24,7 @@ export default function Footer () {
                     </div>
                 </div>
                 <div className="footer-copyright">
-                    <p className="copyright">© Copyright 2021 Portyleria y Ariel Molho - Todos los derechos reservados</p>
+                    <p className="copyright">© Copyright - Todos los derechos reservados</p>
                 </div>
             </div>
         </footer>

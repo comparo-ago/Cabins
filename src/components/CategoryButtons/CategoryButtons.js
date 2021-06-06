@@ -6,25 +6,16 @@ export default function CategoryButtons() {
         <div className="d-flex justify-content-center mt-3 mb-3">
             <div className="btn-group" role="group" aria-label="Basic example">
                 <button type="button" className="btn btn-secondary">
-                    <Link to={`/products`} className="link-text">Todos</Link>
+                    <Link to={`/products`} className="link-text">Todas nuestras Cabañas</Link>
                 </button>
                 <button type="button" className="btn btn-secondary">
-                    <Link to={`/products/alfajor`} className="link-text">Alfajores</Link>
+                    <Link to={`/products/Cemento`} className="link-text">Cabaña de Cemento</Link>
                 </button>
                 <button type="button" className="btn btn-secondary">
-                    <Link to={`/products/muffin`} className="link-text">Muffins</Link>
+                    <Link to={`/products/holandesa`} className="link-text">Cabaña Holandesa</Link>
                 </button>
                 <button type="button" className="btn btn-secondary">
-                    <Link to={`/products/cookie`} className="link-text">Cookies</Link>
-                </button>
-                <button type="button" className="btn btn-secondary">
-                    <Link to={`/products/scon`} className="link-text">Scons</Link>
-                </button>
-                <button type="button" className="btn btn-secondary">
-                    <Link to={`/products/pasta-frola`} className="link-text">Pasta Frolas</Link>
-                </button>
-                <button type="button" className="btn btn-secondary">
-                    <Link to={`/products/porty-box`} className="link-text">Porty Box</Link>
+                    <Link to={`/products/Caribenia`} className="link-text">Cabaña Caribeña</Link>
                 </button>
             </div>
         </div>
