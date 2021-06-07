@@ -29,7 +29,7 @@ export default function CartList() {
                 <tfoot>
                     { cart.length === 0 ? 
                         <tr id="footer-carrito">
-                            <th className="empty-cart" scope="row" colSpan="5">Carrito vacío - comience a comprar!</th>
+                            <th className="empty-cart" scope="row" colSpan="5">Carrito vacío </th>
                         </tr>
                         :
                         <tr id="footer-carrito">
