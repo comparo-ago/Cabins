@@ -19,19 +19,35 @@ export function getPostById(idPost) {
     return snapshot.docs.map(doc => doc.data())
   })
 }
+// export function createOrder(buyer, items, total) {
+//   console.log(buyer);
+//   return orderCollection
+//   .add({
+//     buyer: buyer,
+//     items: items,
+//     date: firebase.firestore.Timestamp.fromDate(new Date()),
+//     total: total,
+//   })
+//   .then(function (oderId) {
+//     return oderId.id;
+//   })
+//   .catch(function (error) {
+//     return error;
+//   });
+// }  
 export function createOrder(buyer, items, total) {
-  console.log(buyer);
+  console.log(buyer, items, total);
   return orderCollection
-  .add({
-    buyer: buyer,
-    items: items,
-    date: firebase.firestore.Timestamp.fromDate(new Date()),
-    total: total,
-  })
-  .then(function (oderId) {
-    return oderId.id;
-  })
-  .catch(function (error) {
-    return error;
-  });
-}  
+    .add({
+      buyer: buyer,
+      items: items,
+      date: firebase.firestore.Timestamp.fromDate(new Date()),
+      total: total,
+    })
+    .then(function (oderId) {
+      return oderId.id;
+    })
+    .catch(function (error) {
+      return error;
+    });
+}

@@ -23,7 +23,6 @@ export default function ItemDetail({data}) {
     const newItem = {
       id: data[0].id,
       categoria: data[0].category,
-      tipo: data[0].title,
       precio: data[0].price,
       cantidad: cantidadCompra
     };

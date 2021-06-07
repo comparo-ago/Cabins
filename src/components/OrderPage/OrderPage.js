@@ -24,8 +24,7 @@ export default function OrderPageContainer() {
         createOrder(buyer, cart, totalPrice)
         .then(id => setOrderId(id));
         
-    }
-    console.log(totalPrice);
+    };
     
     let history = useHistory();
     function closeAndReset(){

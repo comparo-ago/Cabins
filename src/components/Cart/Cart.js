@@ -13,7 +13,6 @@ export default function Cart({ itemSale }) {
         const newItem = {
             id: itemSale.id,
             categoria: itemSale.categoria,
-            tipo: itemSale.tipo,
             precio: itemSale.precio,
             cantidad: itemSale.cantidad +1
         };
@@ -24,7 +23,6 @@ export default function Cart({ itemSale }) {
         const newItem = {
             id: itemSale.id,
             categoria: itemSale.categoria,
-            tipo: itemSale.tipo,
             precio: itemSale.precio,
             cantidad: itemSale.cantidad -1
         };
@@ -34,7 +32,6 @@ export default function Cart({ itemSale }) {
     return (
         <tr>
             <th>{capitalizarPrimeraLetra(itemSale.categoria)}</th>
-            <td>{itemSale.tipo}</td>
             <td>
                 {
                     itemSale.cantidad < 5 ? <button onClick={increaseQuantity} className="btn btn-info btn-sm action-button">+</button> : <button className="btn btn-info btn-sm action-button" disabled>+</button>
