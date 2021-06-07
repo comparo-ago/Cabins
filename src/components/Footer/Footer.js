@@ -10,7 +10,7 @@ export default function Footer () {
                 <div className="d-flex flex-row justify-content-around align-items-center footer">
                     <div className="p-2">
                         <NavLink to={`/`} className="navbar-brand">
-                            <img src={logo} className="navbar-logo" width="120" height="60" alt="Kusikuy" loading="lazy"/>
+                            <img src={logo} className="navbar-logo" width="120" height="45" alt="Kusikuy" loading="lazy"/>
                         </NavLink>
                     </div>
                     <div className="p-2">

@@ -38,11 +38,11 @@ export default function Cart({ itemSale }) {
                 }
                 <span className="cart-visual">{itemSale.cantidad}</span>
                 {
-                    itemSale.cantidad > 1 ? <button onClick={reduceQuantity} className="btn btn-danger btn-sm action-button">-</button> : <button className="btn btn-danger btn-sm action-button" disabled>-</button>
+                    itemSale.cantidad > 1 ? <button onClick={reduceQuantity} className="btn btn-warning btn-sm action-button">-</button> : <button className="btn btn-danger btn-sm action-button" disabled>-</button>
                 }
             </td>
             <td>
-                <button onClick={() => handleRemove(itemSale.id)} className="btn btn-warning btn-sm action-button">
+                <button onClick={() => handleRemove(itemSale.id)} className="btn btn-info btn-sm action-button">
                     <img src={trash} alt="Borrar"/>
                 </button>
             </td>
