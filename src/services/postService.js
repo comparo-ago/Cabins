@@ -13,7 +13,7 @@ export function getPosts() {
 }
 
 export function getPostById(idPost) {
-  const itemById = itemCollection.where("id", "==", parseInt(idPost));
+  const itemById = itemCollection
   return itemById.get()
     .then(snapshot => {
       return snapshot.docs.map(doc => doc.data())

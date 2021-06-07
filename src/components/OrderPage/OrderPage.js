@@ -12,6 +12,7 @@ export default function OrderPageContainer() {
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState(0);
     const [orderId, setOrderId] = useState('');
+    
 
     function placeOrder(event) {
         event.preventDefault()
@@ -21,15 +22,16 @@ export default function OrderPageContainer() {
             phone: phone
         };
         createOrder(buyer, cart, totalPrice)
-            .then(id => setOrderId(id));
+        .then(id => setOrderId(id));
+        console.log(buyer);
     }
-
+    
     let history = useHistory();
     function closeAndReset(){
         clearCart();
         history.push(`/`);
     }
-
+    
     return(
         <div>
             <form className="order-form">
