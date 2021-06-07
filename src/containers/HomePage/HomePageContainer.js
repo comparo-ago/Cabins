@@ -2,7 +2,6 @@ import React from "react";
 import holandesa from '../../assets/images/cabaniaholandesa.jpg';
 import caribeña from '../../assets/images/cabaniacaribenia.jpg';
 import cemento from '../../assets/images/cabaniacemento.jpg';
-import cemento2 from '../../assets/images/cabaniacemento2.jpg';
 import './HomePageContainer.css';
 import {Link} from 'react-router-dom';
 
@@ -12,7 +11,6 @@ export default function HomePageContainer() {
             <div className="d-flex flex-row">
                 <img src={holandesa} className="d-block w-10 h-10" alt="Holandesa"/>
                 <img src={caribeña} className="d-block w-25 h-25" alt="caribeña"/>
-                <img src={cemento2} className="d-block w-25 h-25"  alt="cemento2"/>
                 <img src={cemento} className="d-block w-25 h-25"  alt="cemento"/>
             </div>
             <div className="card w-50 mx-auto home-card">

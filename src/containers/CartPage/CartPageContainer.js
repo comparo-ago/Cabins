@@ -20,7 +20,8 @@ export default function CartPageContainer() {
             { cart.length !== 0 &&
                 <div>
                     <div className="d-flex flex-row-reverse">
-                        <button type="button" className="end-button btn btn-outline-success" data-bs-toggle="collapse" data-bs-target="#collapseForm" aria-expanded="false" aria-controls="collapseForm">
+                        <button type="button" className="end-button btn btn-outline-success" data-bs-toggle="collapse" data-bs-target="#collapseForm" 
+                        aria-expanded="false" aria-controls="collapseForm">
                             Ingresar Datos
                         </button>
                     </div>

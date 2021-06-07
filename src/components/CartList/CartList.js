@@ -5,7 +5,7 @@ import { CartContext } from '../../context/cartContext';
 export default function CartList() {
     const { cart, clearCart, totalPrice } = useContext(CartContext);
 
-    const cartOrder = ["alfajor", "cookie", "muffin", "pasta-frola", "porty-box", "scon"]
+    const cartOrder = ["Cabaña de Cemento", "Cabaña Holandesa", "Cabaña Caribeña"]
     const sortedCart = Object.keys(cart).map(key => cart[key]);
     sortedCart.sort((a, b) => cartOrder.indexOf(a.categoria) - cartOrder.indexOf(b.categoria));
 
@@ -29,7 +29,7 @@ export default function CartList() {
                 <tfoot>
                     { cart.length === 0 ? 
                         <tr id="footer-carrito">
-                            <th className="empty-cart" scope="row" colSpan="5">Carrito vacío - comience a comprar!</th>
+                            <th className="empty-cart" scope="row" colSpan="5">Carrito vacío </th>
                         </tr>
                         :
                         <tr id="footer-carrito">
@@ -41,7 +41,7 @@ export default function CartList() {
                                 </button>
                             </td>
                             <td className="font-weight-bold">Total a abonar</td>
-                            <td className="font-weight-bold">$ <span>{totalPrice}</span></td>
+                            <td className="font-weight-bold">u$d <span>{totalPrice}</span></td>
                         </tr>
                     }
                 </tfoot>
