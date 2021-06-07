@@ -13,7 +13,7 @@ export default function OrderPageContainer() {
     const [phone, setPhone] = useState(0);
     const [orderId, setOrderId] = useState('');
     
-
+    
     function placeOrder(event) {
         event.preventDefault()
         const buyer = {
@@ -23,15 +23,15 @@ export default function OrderPageContainer() {
         };
         createOrder(buyer, cart, totalPrice)
         .then(id => setOrderId(id));
-        console.log(buyer);
+        
     }
+    console.log(totalPrice);
     
     let history = useHistory();
     function closeAndReset(){
         clearCart();
         history.push(`/`);
     }
-    
     return(
         <div>
             <form className="order-form">

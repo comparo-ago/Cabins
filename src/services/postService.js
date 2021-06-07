@@ -7,31 +7,31 @@ const orderCollection = db.collection("orders");
 
 export function getPosts() {
   return itemCollection.get()
-    .then(snapshot => {
-      return snapshot.docs.map(doc => doc.data())
-    })
+  .then(snapshot => {
+    return snapshot.docs.map(doc => doc.data())
+  })
 }
 
 export function getPostById(idPost) {
   const itemById = itemCollection
   return itemById.get()
-    .then(snapshot => {
-      return snapshot.docs.map(doc => doc.data())
-    })
+  .then(snapshot => {
+    return snapshot.docs.map(doc => doc.data())
+  })
 }
-
 export function createOrder(buyer, items, total) {
+  console.log(buyer);
   return orderCollection
-    .add({
-      buyer: buyer,
-      items: items,
-      date: firebase.firestore.Timestamp.fromDate(new Date()),
-      total: total,
-    })
-    .then(function (oderId) {
-      return oderId.id;
-    })
-    .catch(function (error) {
-      return error;
-    });
-  }  
+  .add({
+    buyer: buyer,
+    items: items,
+    date: firebase.firestore.Timestamp.fromDate(new Date()),
+    total: total,
+  })
+  .then(function (oderId) {
+    return oderId.id;
+  })
+  .catch(function (error) {
+    return error;
+  });
+}  
